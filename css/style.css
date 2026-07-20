@@ -1,0 +1,131 @@
+:root {}
+
+.body {
+    background: black;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====================================== */
+
+
+.header {
+    width: 100%;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.header__wrapper {
+    padding: 12px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    
+}
+
+.nav__text {
+    font-size: 25px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: repeating-linear-gradient(90deg, rgb(219, 196, 174) 0px, rgb(245 184 154) 3px, rgb(207 165 136 / 82%) 6px, rgb(137 115 95) 10px, rgb(233, 189, 158) 15px);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.nav__town {
+    font-size: 20px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: repeating-linear-gradient(90deg, rgb(219, 196, 174) 0px, rgb(245 184 154) 3px, rgb(207 165 136 / 82%) 6px, rgb(137 115 95) 10px, rgb(233, 189, 158) 15px);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.nav__list-item {
+}
+.nav__list-link {
+}
+.nav__icon {
+    width: 27px;
+    }
+
+    /* ======================== */
+
+.about {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    width: 100%;
+    height: 600px;
+    background: url(../img/backgrounds/kitchen-back.png) no-repeat;
+    background-size: cover;
+    background-position: 18% 90%;
+}
+
+.about__wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 25% 40% 25%;
+    padding-top: 80px;
+    height: 300px;
+    line-height: 140%;
+}
+.about__title {
+    width: 450px;
+    font-size: 52px;
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+}
+.about__text {
+    font-size: 20px;
+    font-weight: 400;
+    grid-row: 2;
+    grid-column: 2;
+    text-align: start;
+}
+
+#at2 {
+    font-size: 20px;
+    font-weight: 400;
+    grid-row: 3;
+    grid-column: 3;
+}
