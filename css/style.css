@@ -137,6 +137,8 @@
 
 .catalog {
     font-family: "Montserrat", sans-serif;
+    /* background: url(../img/backgrounds/catalog-back.png) no-repeat; */
+    background-size: cover;
 }
 
 .catalog__title {
@@ -162,6 +164,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 25px;
+    gap: 15px;
 }
 
 .catalog__link {}
