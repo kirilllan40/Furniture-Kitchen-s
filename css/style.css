@@ -290,6 +290,7 @@
 
 .contact__text-title {
     font-size: 25px;
+    text-align: center;
 }
 
 .contact__text-span {
@@ -297,6 +298,27 @@
     width: 100%;
     font-weight: 300;
     text-align: center;
+}
+
+.contact__btn {
+    width: 400px;
+    max-width: 400px;
+    padding: 14px 40px;
+    background: transparent;
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.contact__btn:hover {
+    background: #73737351;
+    transform: scale(1.02);
 }
 
 .contact__form {
@@ -325,7 +347,7 @@
     height: 60px;
     background: rgba(0, 0, 0, 0.143);
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 20px;
     font-size: 16px;
     color: white;
@@ -528,7 +550,39 @@
 
 /* ======================= */
 /* ======================= */
-@media (max-width: 800px) {}
+@media (max-width: 950px) {
+    .contact__wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .contact__text {
+        width: 100%;
+    }
+
+    .contact__form {
+        align-items: center;
+        flex-direction: row;
+        height: 120px;
+        width: 100%;
+    }
+    /* ------------------- */
+    .designe__wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .designe__item {
+        align-items: center;
+    }
+
+    .designe__img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
 
 @media (max-width: 660px) {
     .nav {
@@ -557,6 +611,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 50px;
     }
 
     .about__title {
@@ -579,6 +634,43 @@
 
     .catalog__wrapper {
         gap: 7px;
+    }
+
+    /* ----------------------- */
+
+    .contact__wrapper {
+        gap: 20px;
+    }
+
+    .contact__form {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact__btn {
+        width: 70%;
+    }
+
+    .form__naming {
+        width: 78%;
+    }
+
+    /* ------------------ */
+    .designe__title {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .designe__text {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .designe__img {
+        min-height: 50%;
+        width: 90%;
+        height: 50%;
     }
 
 }
@@ -607,5 +699,10 @@
 
     .nav__town {
         font-size: 12px;
+    }
+
+    /* ==================== */
+    .designe__text {
+        font-size: 20px;
     }
 }
