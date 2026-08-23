@@ -1,0 +1,74 @@
+.header {
+    width: 100%;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.header__wrapper {
+    padding: 12px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.nav__anchor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: repeating-linear-gradient(90deg, rgb(219, 196, 174) 0px, rgb(245 184 154) 3px, rgb(207 165 136 / 82%) 6px, rgb(137 115 95) 10px, rgb(233, 189, 158) 15px);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.anchor__item {}
+
+.anchor__item-link {}
+
+.nav__text {
+    font-size: 25px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: repeating-linear-gradient(90deg, rgb(219, 196, 174) 0px, rgb(245 184 154) 3px, rgb(207 165 136 / 82%) 6px, rgb(137 115 95) 10px, rgb(233, 189, 158) 15px);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.nav__town {
+    font-size: 20px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: repeating-linear-gradient(90deg, rgb(219, 196, 174) 0px, rgb(245 184 154) 3px, rgb(207 165 136 / 82%) 6px, rgb(137 115 95) 10px, rgb(233, 189, 158) 15px);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.nav__list-item {}
+
+.nav__list-link {}
+
+.nav__icon {
+    width: 27px;
+}
