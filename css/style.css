@@ -28,7 +28,59 @@
 }
 
 /* ====================================== */
-/* ======================== */
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    border-radius: 100px;
+    background: white;
+    transition: all .5s;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;
+}
+
+.burger-icon span::after {
+    bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+/* ========================================= */
 
 .about {
     position: relative;
@@ -506,11 +558,13 @@
     .facade__wrapper {
         grid-template-columns: 1fr;
     }
+
     .facade__materials {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .materials__item {
         width: 100%;
     }
@@ -518,91 +572,147 @@
 
 
 @media (max-width: 660px) {
-    .nav {
-        gap: 30px;
-    }
 
-    .nav__text {
-        font-size: 16px;
-    }
-
-    .nav__town {
-        font-size: 16px;
-    }
-
-    .nav__icon {
-        width: 25px;
-    }
-
-    /* ---------------- */
-    .about {
-        height: auto;
-    }
-
-    .about__wrapper {
+    .burger-icon {
         display: flex;
+    }
+
+    .body--opened-menu {
+        overflow: hidden;
+    }
+
+    .body--opened-menu nav__anchor {
+        transform: translateX(0);
+    }
+
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+        z-index: 11;
+    }
+
+    .nav__anchor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        padding-bottom: 50px;
+        gap: 60px;
+        margin: 0;
+        padding: 130px 20px 20px;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        z-index: 10;
+        font-size: 24px;
     }
 
-    .about__title {
-        font-size: 32px;
-    }
-
-    .about__text {
-        font-size: 16px;
-        text-align: center;
-        width: 100%;
-    }
-
-    #at2 {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    /* ----------------------- */
-    .catalog__wrapper {
-        gap: 7px;
-    }
-
-    /* ----------------------- */
-    .contact__wrapper {
-        gap: 20px;
-    }
-
-    .contact__form {
+    .body--opened-menu .nav__anchor {
+        transform: translateX(0);
         flex-direction: column;
-        height: 100%;
-        width: 100%;
-    }
-
-    .contact__btn {
-        width: 70%;
-    }
-
-    .form__naming {
-        width: 78%;
-    }
-
-    /* ---------------------- */
-    .designe__title {
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .designe__text {
-        text-align: center;
-        font-size: 25px;
-    }
-
-    .designe__img {
-        min-height: 50%;
-        width: 90%;
-        height: 50%;
+        background: wheat;
+        color: black;
+        justify-content: flex-start;
+        font-size: 26px;
+        gap: 60px;
     }
 }
+
+.nav {
+    gap: 30px;
+}
+
+.nav__text {
+    font-size: 16px;
+}
+
+.nav__town {
+    font-size: 16px;
+}
+
+.nav__icon {
+    width: 35px;
+}
+
+.nav__list-item {
+    width: 35px;
+}
+
+/* ---------------- */
+.about {
+    height: auto;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.about__title {
+    font-size: 32px;
+}
+
+.about__text {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+#at2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ----------------------- */
+.catalog__wrapper {
+    gap: 7px;
+}
+
+/* ----------------------- */
+.contact__wrapper {
+    gap: 20px;
+}
+
+.contact__form {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.contact__btn {
+    width: 70%;
+}
+
+.form__naming {
+    width: 78%;
+}
+
+/* ---------------------- */
+.designe__title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.designe__text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.designe__img {
+    min-height: 50%;
+    width: 90%;
+    height: 50%;
+}
+
 
 @media (max-width: 500px) {
     .catalog__wrapper {
