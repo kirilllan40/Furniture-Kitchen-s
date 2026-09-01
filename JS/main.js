@@ -23,7 +23,7 @@
             return;
         }
 
-        if (e.target.closest('anchor__item-link') && body.classList.contains('body--opened-menu')) {
+        if (e.target.closest('.anchor__item-link') && body.classList.contains('body--opened-menu')) {
             closeMenu();
         }
     });
