@@ -4,7 +4,7 @@ const CATALOG_DATA = {
         text: "Классические прямые кухни — оптимальное решение для небольших и средних помещений.",
         items: [
             {
-                img: "https://placehold.co/600x400/e0e0e0/333333?text=Прямая+Классик",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Прямая кухня «Классик»",
                 desc: "Эмалированные фасады, длина 3.2 м, столешница из ДСП, встроенная мойка.",
                 price: 55000,
@@ -12,7 +12,7 @@ const CATALOG_DATA = {
                 size: "3.2 м"
             },
             {
-                img: "https://placehold.co/600x400/e0e0e0/333333?text=Прямая+Модерн",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Прямая кухня «Модерн»",
                 desc: "Акриловые фасады, встроенная техника, длина 3.6 м, фурнитура Blum.",
                 price: 78000,
@@ -20,7 +20,7 @@ const CATALOG_DATA = {
                 size: "3.6 м"
             },
             {
-                img: "https://placehold.co/600x400/e0e0e0/333333?text=Прямая+Лофт",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Прямая кухня «Лофт»",
                 desc: "Фасады из массива дуба, 4 м, открытые полки, темная столешница.",
                 price: 120000,
@@ -35,7 +35,7 @@ const CATALOG_DATA = {
         text: "Угловые кухни экономят место и дают максимум рабочей поверхности.",
         items: [
             {
-                img: "https://placehold.co/600x400/d4c7b8/333333?text=Угловая+Комфорт",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Угловая кухня «Комфорт»",
                 desc: "Фасады МДФ, длина 3 м, встроенная мойка, ящики с доводчиками.",
                 price: 62000,
@@ -43,7 +43,7 @@ const CATALOG_DATA = {
                 size: "3.0 м"
             },
             {
-                img: "https://placehold.co/600x400/d4c7b8/333333?text=Угловая+Премиум",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Угловая кухня «Премиум»",
                 desc: "Эмалированные фасады, столешница из кварцевого агломерата, 4 м.",
                 price: 145000,
@@ -51,7 +51,7 @@ const CATALOG_DATA = {
                 size: "4.0 м"
             },
             {
-                img: "https://placehold.co/600x400/d4c7b8/333333?text=Угловая+Неоклассика",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Угловая кухня «Неоклассика»",
                 desc: "Фрезерованные фасады, фурнитура с бронзовым покрытием, 3.5 м.",
                 price: 98000,
@@ -66,7 +66,7 @@ const CATALOG_DATA = {
         text: "П-образная планировка — максимум рабочих зон и мест хранения.",
         items: [
             {
-                img: "https://placehold.co/600x400/bbaea0/333333?text=П-образная+Гранд",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "П-образная кухня «Гранд»",
                 desc: "5 м, три рабочих зоны, встроенная техника, подоконник-остров.",
                 price: 195000,
@@ -74,7 +74,7 @@ const CATALOG_DATA = {
                 size: "5.0 м"
             },
             {
-                img: "https://placehold.co/600x400/bbaea0/333333?text=П-образная+Уют",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "П-образная кухня «Уют»",
                 desc: "3.8 м, ЛДСП с влагостойкой кромкой, верхние шкафы до потолка.",
                 price: 82000,
@@ -89,7 +89,7 @@ const CATALOG_DATA = {
         text: "Остров — центр кухни и дополнительная рабочая поверхность.",
         items: [
             {
-                img: "https://placehold.co/600x400/a39587/333333?text=Остров+Модерн",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Кухня с островом «Модерн»",
                 desc: "4.5 м, остров с барной стойкой, премиальная фурнитура.",
                 price: 210000,
@@ -97,7 +97,7 @@ const CATALOG_DATA = {
                 size: "4.5 м"
             },
             {
-                img: "https://placehold.co/600x400/a39587/333333?text=Остров+Минимализм",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Кухня с островом «Минимализм»",
                 desc: "3.8 м, интегрированные ручки, матовые поверхности без текстуры.",
                 price: 165000,
@@ -112,7 +112,7 @@ const CATALOG_DATA = {
         text: "Барная стойка объединяет кухню и гостиную.",
         items: [
             {
-                img: "https://placehold.co/600x400/918476/333333?text=Барная+Лофт",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Кухня с барной стойкой «Лофт»",
                 desc: "3.8 м, барная стойка из массива дуба, открытые полки.",
                 price: 130000,
@@ -120,7 +120,7 @@ const CATALOG_DATA = {
                 size: "3.8 м"
             },
             {
-                img: "https://placehold.co/600x400/918476/333333?text=Барная+Современная",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Кухня с барной стойкой «Современная»",
                 desc: "4.2 м, стойка из искусственного камня, подсветка рабочей зоны.",
                 price: 175000,
@@ -135,7 +135,7 @@ const CATALOG_DATA = {
         text: "Шкафы под заказ — любые размеры и наполнение.",
         items: [
             {
-                img: "https://placehold.co/600x400/d1cfcb/333333?text=Шкаф-Пенал",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Шкаф-пенал «Классика»",
                 desc: "Высота 2.4 м, распашные фасады, ящики с доводчиками.",
                 price: 45000,
@@ -143,7 +143,7 @@ const CATALOG_DATA = {
                 size: "2.4 м"
             },
             {
-                img: "https://placehold.co/600x400/d1cfcb/333333?text=Шкаф+Гардеробная",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Шкаф «Гардеробная система»",
                 desc: "Модульная система, открытые секции, штанги для одежды.",
                 price: 35000,
@@ -158,7 +158,7 @@ const CATALOG_DATA = {
         text: "Шкафы-купе экономят место и вмещают максимум вещей.",
         items: [
             {
-                img: "https://placehold.co/600x400/bfb9b1/333333?text=Купе+Модерн",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Шкаф-купе «Модерн»",
                 desc: "3 створки, зеркальные вставки, наполнение по вашему выбору.",
                 price: 68000,
@@ -166,7 +166,7 @@ const CATALOG_DATA = {
                 size: "2.8 м"
             },
             {
-                img: "https://placehold.co/600x400/bfb9b1/333333?text=Купе+Лофт",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Шкаф-купе «Лофт»",
                 desc: "2 створки, фасады с эффектом состаренного дерева, 2.2 м.",
                 price: 52000,
@@ -181,7 +181,7 @@ const CATALOG_DATA = {
         text: "Практичные и доступные столешницы из ДСП.",
         items: [
             {
-                img: "https://placehold.co/600x400/c4bcb4/333333?text=ДСП+Дуб+Сонома",
+                img: "img/catalog/island-kitchen.jpg",
                 title: "Столешница ДСП «Дуб Сонома»",
                 desc: "Ширина 600 мм, толщина 38 мм, влагостойкая кромка.",
                 price: 4500,

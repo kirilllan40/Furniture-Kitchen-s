@@ -20,29 +20,95 @@
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+    background: url(../img/backgrounds/catalog-backwood.png);
 }
 
 .catalog__card {
-    padding: 60px 0 40px;
+    width: 100%;
+    padding: 0 0 15px;
     background: #fff;
-    flex: 1;
+    max-width: 800px;
     font-family: "Montserrat", sans-serif;
+}
+
+.catalog__card-img {
+    width: 100%;
+    height: 400px;
+    /* Чуть выше, раз карточка шире */
+    object-fit: cover;
+    display: block;
+}
+
+/* ============================= */
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    border-radius: 100px;
+    background: white;
+    transition: all .5s;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;
+}
+
+.burger-icon span::after {
+    bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
 }
 
 /* ============================= */
 
 .hero__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки на десктопе */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 30px;
-    height: 100%;
+    padding: 40px 0;
 }
 
 .catalog__card-body {
     padding: 22px;
     display: flex;
     flex-direction: column;
-    flex: 1; /* Чтобы все карточки были одинаковой высоты */
+    flex: 1;
+    /* Чтобы все карточки были одинаковой высоты */
 }
 
 .catalog__card-title {
@@ -56,13 +122,15 @@
     color: #555;
     line-height: 1.5;
     margin-bottom: 20px;
-    flex: 1; /* Прижимает цену к низу */
+    flex: 1;
+    /* Прижимает цену к низу */
 }
 
 .catalog__card-price {
     font-size: 22px;
     font-weight: 700;
-    color: #b8860b; /* Золотистый цвет */
+    color: #b8860b;
+    /* Золотистый цвет */
     margin-top: auto;
 }
 
@@ -79,7 +147,8 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background: #fff;
+    background: url(../img/backgrounds/catalog-backwood.png);
+    padding: 10px 0 40px;
 }
 
 .catalog__back-link {
@@ -87,16 +156,128 @@
     justify-content: center;
     width: 300px;
     padding: 12px 32px;
-    border: 1px solid #222;
+    border: 1px solid #ffffff;
     border-radius: 50px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #222;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 .catalog__back-link:hover {
     background: #222;
     color: #fff;
+}
+
+/* ====================================== */
+
+@media (max-width: 660px) {
+
+    .burger-icon {
+        display: flex;
+    }
+
+    .body--opened-menu {
+        overflow: hidden;
+    }
+
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+        z-index: 11;
+    }
+
+    .nav__anchor {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 60px;
+        margin: 0;
+        padding: 130px 20px 20px;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+        visibility: visible;
+        z-index: 10;
+        font-size: 24px;
+        text-shadow: none;
+    }
+
+    .body--opened-menu .nav__anchor {
+        display: flex;
+        transform: translateY(0);
+        flex-direction: column;
+        background: wheat;
+        color: black;
+        justify-content: flex-start;
+        font-size: 26px;
+        gap: 60px;
+        text-shadow: none;
+    }
+
+    .body--opened-menu .nav__anchor .anchor__item-link {
+        color: black;
+        background: none;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        text-shadow: none;
+    }
+
+    /* ----------------- */
+
+    .nav {
+        gap: 100px;
+    }
+
+    .nav__text {
+        font-size: 16px;
+    }
+
+    .nav__town {
+        font-size: 16px;
+    }
+
+    .nav__icon {
+        width: 35px;
+    }
+
+    .nav__list-item {
+        width: 35px;
+    }
+}
+
+/* =============================== */
+
+@media (max-width: 600px) {
+    .hero__wrapper {
+        padding: 20px 15px;
+        /* Отступы по бокам для мобилок */
+    }
+
+    .catalog__card-img {
+        height: 250px;
+        /* Уменьшаем высоту картинок на телефонах */
+    }
+
+    .catalog__card-body {
+        padding: 15px;
+        /* Чуть меньше внутренние отступы */
+    }
+
+    .catalog__back-link {
+        width: 100%;
+        /* Кнопка "Назад" будет тянуться по ширине экрана */
+        max-width: 300px;
+    }
 }
